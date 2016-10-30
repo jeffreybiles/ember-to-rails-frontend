@@ -1,8 +1,8 @@
-<h1>Our first page</h1>
-<p>Hi there</p>
-
-<ul>
-{{#each model as |monster|}}
-  <li>{{monster.name}} is level {{monster.level}}</li>
-{{/each}}
-</ul>
+<h1>Monsters</h1>
+<div class="monsters-index-list">
+  {{#each model as |monster|}}
+    <div class="monster">
+      lvl {{monster.level}} {{monster.name}}
+    </div>
+  {{/each}}
+</div>
