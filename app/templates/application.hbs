@@ -3,6 +3,8 @@
   {{#each model as |monster|}}
     <div class="monster {{if monster.active 'dark'}}">
       lvl {{monster.level}} {{monster.name}}
+      <br>
+      <button {{action 'toggleActive' monster}}>Toggle Active</button>
     </div>
   {{/each}}
 </div>
